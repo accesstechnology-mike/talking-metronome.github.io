@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talking Metronome</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Talking Metronome</h1>
+        <label for="tempo">Tempo (BPM):</label>
+        <input type="range" id="tempo" min="40" max="240" value="100" class="slider">
+        <span id="tempo-display">100</span> BPM
+        <br>
+        <label for="time-signature">Time Signature:</label>
+        <select id="time-signature">
+            <option value="4/4">4/4</option>
+            <!-- <option value="6/8">6/8</option> -->
+            <option value="3/4">3/4</option>
+        </select>
+        <br>
+        <div id="subdivision">
+            <label>
+                <input type="radio" name="subdivision" value="quarter" checked> Quarter Notes
+            </label></br>
+            <label>
+                <input type="radio" name="subdivision" value="eighth"> Eighth Notes
+            </label></br>
+            <label>
+                <input type="radio" name="subdivision" value="sixteenth"> Sixteenth Notes
+            </label>
+        </div>
+        <br>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    </div>
+    <script src="metronome.js"></script>
+</body>
+</html>
+
+
+
